@@ -1,5 +1,81 @@
 body {
-    background-color: gray;
+    background-color: rgb(151, 142, 142);
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+h1 {
+    margin: 5px;
+    color: rgb(54, 32, 32);
+    font-size: 40px;
+    tex
+}
 
+.game-arena {
+    position: relative;
+    height: 350px;
+    width: 800px;
+    padding: 15px;
+    background-color: #53ad51;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+}
+
+textarea {
+    display: flex;
+    height: 20px;
+    width: 168px;
+    text-align: center;
+    resize: none;
+    border: 2px solid black;
+
+}
+
+.player1-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player1-hand {
+    margin-top: 30px;
+    height: 262.5px;
+    width: 170px;
+    border: 2px solid black;
+}
+.player1-hand img {
+    height: 100%;
+    width: 100%;
+}
+
+.player2-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player2-hand {
+    margin-top: 30px;
+    height: 262.5px;
+    width: 170px;
+    border: 2px solid black;
+}
+.player2-hand img {
+    height: 100%;
+    width: 100%;
+}
+
+.score {
+    margin: 8px 0 0 0;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid black;
+}
