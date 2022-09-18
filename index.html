@@ -9,25 +9,29 @@
 </head>
 <body>
     <h1>War Game</h1>
+    <button class="draw-button">Click to Draw Cards / End Round</button>
     <div class="game-arena">
         <div class="player1-area">
-            <textarea>Player 1</textarea>
-            <div class = "player1-hand">
+            <p id="player1-name"></p>
+            <div class = "player1-hand hand">
                 <img src="images/cardback.jpeg" alt="">
             </div>
-            <div class="score">26</div>
+            <div class="player1-card-slot card-slot"></div>
+            <div class="player1-deck deck"></div>
         </div>
         <div class="player2-area">
-            <textarea>Player 2</textarea>
-            <div class = "player2-hand">
+            <p id="player2-name"></p>
+            <div class = "player2-hand hand">
                 <img src="images/cardback.jpeg" alt="">
             </div>
-            <div class="score">26</div>
+            <div class="player2-card-slot card-slot"></div>
+            <div class="player2-deck deck"></div>
         </div>
     </div>
+    <div class="text"></div>
     
 
 
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>
