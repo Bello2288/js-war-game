@@ -22,6 +22,14 @@ button:hover {
     background-color: rgb(159, 154, 154);
 }
 
+.new-game {
+    background-color: #53ad51;
+    color: #ffffff;
+    height: 45px;
+    width: 125px;
+    font-size: 20px;
+}
+
 .game-arena {
     position: relative;
     height: 350px;
@@ -49,15 +57,14 @@ p {
 .text {
     display: flex;
     justify-content: center;
-    /* align-content: center; */
     align-items: center;
-
     background-color: #ffffff;
     border: 2px solid black;
-    height: 30px;
-    width: 150px;
+    height: 60px;
     margin-top: 15px;
     user-select: none;
+    font-size: 35px;
+    padding: 0px 15px;
 }
 
 .player1-area {
@@ -68,12 +75,14 @@ p {
     align-items: center;
 }
 .player1-hand {
+    position: absolute;
     margin-top: 2px;
     height: 262.5px;
     width: 170px;
     border: 2px solid black;
     border-radius: .5rem;
     user-select: none;
+    top: 43px;
 }
 .player1-hand img {
     height: 100%;
@@ -83,7 +92,7 @@ p {
 .player1-card-slot{
     position: absolute;
     left: 200px;
-    top: 47px;
+    
 }
 
 .player2-area {
@@ -94,12 +103,14 @@ p {
     align-items: center;
 }
 .player2-hand {
+    position: absolute;
     margin-top: 2px;
     height: 262.5px;
     width: 170px;
     border: 2px solid black;
     border-radius: .5rem;
     user-select: none;
+    top: 43px;
 }
 .player2-hand img {
     height: 100%;
@@ -109,7 +120,6 @@ p {
 .player2-card-slot{
     position: absolute;
     right: 200px;
-    top:47px;
 }
 
 .player1-deck, .player2-deck {
@@ -123,7 +133,7 @@ p {
 }
 
 
-.card {
+.card-slot {
     position: relative;
     height: 262.5px;
     width: 170px;
@@ -137,18 +147,18 @@ p {
     user-select: none;
  }
  
- .card::before, .card::after {
+ .card-slot::before, .card-slot::after {
     position: absolute;
     content: attr(data-value);
     font-size: 2rem;
  }
  
- .card::before {
+ .card-slot::before {
     top: .5rem;
     left: .5rem;
  }
  
- .card::after {
+ .card-slot::after {
     bottom: .5rem;
     right: .5rem;
     transform: rotate(180deg);

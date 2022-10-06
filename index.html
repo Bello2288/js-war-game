@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button class="new-game">New Game</button>
     <h1>War Game</h1>
-    <button class="draw-button">Click to Draw Cards / End Round</button>
-    <div class="game-arena">
-        <div class="player1-area">
-            <p id="player1-name"></p>
+    <button id="draw-button" class="draw">Click to Draw Cards / End Round</button>
+    <main class="game-arena">
+        <section class="player1-area">
+            <p id="player1-name">Player 1</p>
             <div class = "player1-hand hand">
                 <img src="images/cardback.jpeg" alt="">
             </div>
-            <div class="player1-card-slot card-slot"></div>
+            <div class="player1-card-slot card-slot card"></div>
             <div class="player1-deck deck"></div>
-        </div>
-        <div class="player2-area">
-            <p id="player2-name"></p>
+        </section>
+        <section class="player2-area">
+            <p id="player2-name">Player 2</p>
             <div class = "player2-hand hand">
                 <img src="images/cardback.jpeg" alt="">
             </div>
-            <div class="player2-card-slot card-slot"></div>
+            <div class="player2-card-slot card-slot card"></div>
             <div class="player2-deck deck"></div>
-        </div>
-    </div>
-    <div class="text"></div>
+        </section>
+    </main>
+    <footer class="text"></footer>
     
 
 
